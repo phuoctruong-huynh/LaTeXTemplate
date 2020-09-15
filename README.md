@@ -1,3 +1,3 @@
 # ThesisTemplate
 
-\( ABC \)
+\\( ABC \\)
