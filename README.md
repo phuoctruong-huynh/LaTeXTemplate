@@ -1,3 +1,2 @@
-# ThesisTemplate
+# Mẫu luận văn cho khoa Toán - Tin học
 
-\\( ABC \\)
