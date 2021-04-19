@@ -1,0 +1,282 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Bachelor's/Master's Thesis - Ho Chi Minh City University of Education
+% LaTeX Template
+%
+% Template được làm dựa trên phiên bản của:
+% Steve Gunn (http://users.ecs.soton.ac.uk/srg/softwaretools/document/templates/)
+% Sunil Patel (http://www.sunilpatel.co.uk/thesis-template/)
+% Thực hiện: Nhóm Sinh viên K44:
+% Nguyễn Thị Minh Hằng
+% Nguyễn Thu Hà
+% Đặng Thị Thục Quyên
+% Hoàng Nam Phương
+% Mọi thắc mắc xin liên hệ về email: hphuoctruong.hcmue@gmail.com
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% CÁC GÓI VÀ ĐỊNH DẠNG TÀI LIỆU
+\documentclass[12pt, % cỡ chữ mặc định, các lựa chọn khác: 10pt, 11pt, 12pt
+twoside, % lựa chọn khác: oneside (in một mặt)
+singlespacing, % giãn cách dòng, các lựa khác: onehalfspacing, doublespacing
+%nolistspacing, % Nếu tài liệu đang dùng cách dãn dòng onehalfspacing hay doublespacing, sử dụng lệnh này để dãn dòng danh sách theo kiểu single
+%liststotoc, % Sử dụng lệnh này để thêm danh sách hình ảnh / bảng /v.v. vào mục lục
+% toctotoc, % Dùng lệnh này để thêm "Mục lục" vào mục lục
+%parskip, % Dùng lệnh này để thêm khoảng cách giữa các đoạn
+%nohyperref, % Dùng lệnh này để tắt gói hyperref package
+headsepline, % Sự dụng lệnh này để có đường gạch dưới header
+%chapterinoneline, % Dùng lệnh này để đặt tiêu đề chương và số thứ tự chương trên một dòng
+%consistentlayout, % Sử dụng lệnh này để thay đổi layout của các trang lời cam đoan, tóm tắt và lời biết ơn để khớp với layout mặc định
+]{ThesisHCMUE} 
+
+
+% NGÔN NGỮ
+\usepackage[utf8]{vietnam} 
+\usepackage[T1]{fontenc} 
+\usepackage[main =  vietnamese, english]{babel} % Ngôn ngữ tiếng Việt nếu main = vietnamese, tiếng Anh nếu main = english.
+%\usepackage{times} %Chọn font chữ khác với font chữ mặc định
+\input{settings} % Phần thiết lập chung
+
+
+% TUỲ CHỈNH LỀ VĂN BẢN
+\usepackage[a4paper,top=30mm,bottom=30mm,left=30mm,right=25mm,headsep=6mm,footskip=5mm,includeheadfoot]{geometry}
+% \numberwithin{dummy}{chapter} % Đánh số định lý theo chương
+\parskip = 10pt
+
+
+% THÔNG TIN LUẬN VĂN
+\thesistitle{HÀM ĐIỀU HOÀ}
+% Tên luận văn. In nó ở bất kỳ đâu bằng lệnh \ttitle
+\author{NGUYỄN VĂN A.} 								
+% Tên người thực hiện. In bằng lệnh \authorname
+\supervisor{TS. PHẠM THỊ B.} 						
+% Tên người hướng dẫn. In bằng lệnh \supname
+\degree{ĐẠI HỌC}
+% Trình độ. In bằng lệnh \degreename
+\typethesis{KHOÁ LUẬN TỐT NGHIỆP ĐẠI HỌC} 			
+% Loại luận văn. In bằng lệnh \TypeThesis
+\subject{TOÁN HỌC} 										
+% Môn. In bằng lệnh \subjectname
+\field{TOÁN ỨNG DỤNG}
+% Chuyên ngành.	In bằng lệnh \fieldname
+\keywords{} % Từ khoá của luận văn,  hiện tại chưa được dùng ở bất cứ đâu trong văn bản, in nó bằng lệnh \keywordnames
+\university{TRƯỜNG ĐẠI HỌC SƯ PHẠM THÀNH PHỐ HỒ CHÍ MINH} 
+% Tên trường đại học và website trường. được dùng trong trang bìa, in bằng lệnh \univname
+\department{KHOA TOÁN - TIN HỌC} 
+% Tên khoa và website, được dùng ở trang bìa, in bằng lệnh \deptname
+
+% THÔNG TIN TRÍCH DẪN
+\AtBeginDocument{
+\hypersetup{pdftitle=\ttitle}
+\hypersetup{pdfauthor=\authorname}
+\hypersetup{pdfkeywords=\keywordnames}}
+%\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Kiểu trích dẫn
+%\addbibresource{mybib.bib} % File tài liệu tham khảo
+\usepackage[autostyle=true]{csquotes}
+
+
+\begin{document}
+\frontmatter % Dùng kiểu đánh số La Mã (i, ii, iii, iv...) cho các trang trước phần nội dung chính.
+
+\pagestyle{plain}
+
+%------------------------------------------------
+%	TRANG BÌA CHÍNH - BÌA PHỤ
+%   Đây là hai trang bìa chính và phụ. Nếu không cần thay đổi gì ở hai trang này, có thể bỏ qua và đi vào phần chính.
+%------------------------------------------------
+
+%------------------------------------------------
+%   TRANG BÌA CHÍNH
+%------------------------------------------------
+\begin{titlepage}
+\border{1in} % Vị trí đặt khung của trang bìa. Bỏ dòng này đi nếu không cần khung.
+
+\begin{center}
+\boldfont{16}{\ministry}\\ % Bộ Giáo dục và Đào tạo
+
+\boldfont{16}{\univdefault}\\ % Tên trường, có thể thay bằng \univname điền ở phía trên phần khai báo
+
+\boldfont{16}{\deptdefault}\\ % Tên khoa, có thể thay bằng \deptname điền ở phía trên phần khai báo
+\rule{6cm}{1pt}
+
+\vspace{1cm} % Logos của trường và khoa
+\includegraphics[scale=0.2]{logo/logo.png}\hspace{1cm}
+\includegraphics[scale=0.5]{logo/logokhoa.png}
+
+\vspace{2cm}
+\boldfont{20}{\authorname} % Tên tác giả
+
+\vspace{3cm}
+\boldfont{24}{\ttitle} % Tên đề tài
+
+\vspace{3cm}
+\boldfont{16}{ \TypeThesis} % Loại luận văn
+\end{center}
+\vfill
+
+\begin{center}
+\boldfont{16}{\city - \the\year} % TP.HCM - Năm ...
+\end{center}
+\end{titlepage}
+
+%------------------------------------------------
+%	TRANG BÌA PHỤ
+%------------------------------------------------
+\begin{titlepage}
+\border{1in}
+
+\begin{center}
+\boldfont{16}{\ministry}\\
+
+\boldfont{16}{\univdefault}\\
+
+\boldfont{16}{\deptdefault}\\
+\rule{6cm}{1pt}
+
+
+\vspace{3cm}
+\boldfont{20}{\authorname}
+
+
+\vspace{3cm}
+\boldfont{24}{\ttitle}
+
+\end{center}
+
+\vspace{3cm}
+\basicfont{16pt}{\color{blue} \fieldofstudy: \fieldname}
+%\basicfont{16pt}{\color{blue} Mã số:}
+
+\begin{center}
+\vspace{2cm}
+\boldfont{16}{\TypeThesis} 
+\end{center}
+
+\vspace{1.5cm}
+\begin{flushright}
+\basicfont{16pt}{\supervisorname: \\ \supname}
+\end{flushright}
+
+
+\vfill
+
+\begin{center}
+\boldfont{16}{\city - \the\year}
+\end{center}
+\end{titlepage}
+
+%------------------------------------------------
+%	TRANG CAM ĐOAN
+%------------------------------------------------
+
+\begin{declaration}
+\addchaptertocentry{\authorshipname} % Thêm trang này vào mục lục
+I hereby certify that the thesis I am submitting is entirely my own original work except where otherwise indicated. I am aware of the University's regulations concerning plagiarism, including those regulations concerning disciplinary actions that may result from plagiarism. Any use of the works of any other author, in any form, is properly acknowledged at their point of use.
+
+Tôi xin cam đoan rằng luận văn này được chính tôi thực hiện, các thông tin trích dẫn trong luận văn này đều được chỉ rõ nguồn gốc.
+\end{declaration}
+\cleardoublepage
+
+%----------------------------------------------------------------------------------------
+%	TRANG TRÍCH DẪN
+%----------------------------------------------------------------------------------------
+
+\vspace*{0.2\textheight}
+
+\noindent{\itshape If people do not believe that mathematics is simple, it is only $12345678$ because they do not realize how complicated life is.}\bigbreak
+
+\hfill John von Neumann
+
+%----------------------------------------------------------------------------------------
+%	TRANG TÓM TẮT
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+\addchaptertocentry{\abstractname} 
+\thispagestyle{empty}  % Bỏ dấu % để tạo trang trắng, không hiện số trang.
+The thesis abstract is written here.
+\end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	TRANG LỜI CẢM ƠN
+%----------------------------------------------------------------------------------------
+
+\begin{acknowledgements}
+\addchaptertocentry{\acknowledgementname} % Thêm trang này vào mục lục
+I would like to express my deepest gratitude to my supervisor, Nguyễn Phư \ldots
+\end{acknowledgements}
+
+%----------------------------------------------------------------------------------------
+%	TRANG LỜI GỬI TẶNG
+%----------------------------------------------------------------------------------------
+
+\dedicatory{Gửi đến gia đình tôi \ldots} 
+
+%----------------------------------------------------------------------------------------
+%	MỤC LỤC
+%----------------------------------------------------------------------------------------
+
+\tableofcontents 
+%\listoffigures % Danh sách hình ảnh - Nếu dùng thì bỏ dấu % ở đầu
+%\listoftables  % Danh sách bảng biểu - Nếu dùng thì bỏ dấu % ở đầu
+
+%----------------------------------------------------------------------------------------
+%	TRANG TỪ VIẾT TẮT
+%----------------------------------------------------------------------------------------
+
+% Nếu không dùng có thể xoá toàn bộ trang này đi.
+
+\begin{abbreviations}{ll} % Bao gồm danh sách từ viết tắt (một cái bảng có hai cột)
+
+\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere\\
+\textbf{WSF} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or\\
+
+\end{abbreviations}
+
+%----------------------------------------------------------------------------------------
+%	TRANG KÝ HIỆU 
+%----------------------------------------------------------------------------------------
+
+% Nếu không dùng có thể xoá toàn bộ trang này đi.
+
+\begin{symbols}{ll} % Bao gồm danh sách các ký hiệu sử dụng (một bảng gồm hai cột)
+
+$\mathbb{N}$ & Tập hợp các số tự nhiên \\
+$\mathbb{R}^*$ & Tập hợp các số thực khác $0$ \\
+\addlinespace 
+$L^p(\Omega)$ & Không gian các hàm khả tích bậc $p$ trên $\Omega$
+\end{symbols}
+
+%----------------------------------------------------------------------------------------
+%	NỘI DUNG LUẬN VĂN - CÁC CHƯƠNG
+%----------------------------------------------------------------------------------------
+
+\mainmatter
+\pagestyle{thesis}
+\overfullrule=5mm
+
+% Các file luận văn được để trong folder Chapters. Cần dùng file nào thì include tương ứng.
+
+\include{Chapters/Chapter1}
+\include{Chapters/Chapter2} 
+
+%----------------------------------------------------------------------------------------
+%	NỘI DUNG LUẬN VĂN - PHỤ LỤC
+%----------------------------------------------------------------------------------------
+
+\appendix %PHỤ LỤC
+
+% Bao gồm phần phụ lục của luận văn, mỗi phần phụ lục là các file riêng từ folder Appendices
+
+\include{Appendices/AppendixA}
+%\include{Appendices/AppendixB}
+
+%----------------------------------------------------------------------------------------
+%	TÀI LIỆU THAM KHẢO
+%----------------------------------------------------------------------------------------
+
+\newpage
+\addcontentsline{toc}{chapter}{References}
+\bibliographystyle{IEEEtran}
+\bibliography{mybib}
+
+\end{document}  
