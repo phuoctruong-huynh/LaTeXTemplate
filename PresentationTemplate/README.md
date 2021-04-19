@@ -1,2 +1,3 @@
-# Mẫu luận văn cho khoa Toán - Tin học
+# Mẫu trình chiếu cho khoa Toán - Tin học
+Coming soon.
 
