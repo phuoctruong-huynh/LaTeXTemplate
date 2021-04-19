@@ -1,11 +1,12 @@
 %----------------------------------------------------------------------------------------
 %	MỘT SỐ GÓI LỆNH CƠ BẢN
 %----------------------------------------------------------------------------------------
-\uselanguage{all}
 \usepackage{tikz}
 \usetikzlibrary{calc}
 \usepackage{eso-pic}
 \usepackage{amsmath,amsfonts,amssymb,commath,mathtools,enumerate,amsthm}
+\usepackage{titlesec}
+\usepackage{lipsum}
 
 %----------------------------------------------------------------------------------------
 %	GÓI LỆNH VẼ HÌNH
@@ -17,11 +18,14 @@
 \usetikzlibrary{calc}
 
 %----------------------------------------------------------------------------------------
-%	THIẾT LẬP FONT CHỮ
+%	GÓI MÀU
 %----------------------------------------------------------------------------------------
-\newcommand{\boldfont}[2]{\textbf{\fontsize{#1 pt}{18pt}\fontfamily{phv}\selectfont{#2}}}
-\newcommand{\basicfont}[2]{\fontsize{#1 pt}{14pt}\fontfamily{phv}\selectfont{#2}}
-% Các font khác: utopia/fourier (put), palatino (ppl), helvetica (phv), courier (pcr), tgbonum (qbk),, bookman (pbk), times (ptm)...
+\usepackage{color}
+\definecolor{darkblue}{RGB}{0,0,170}
+\definecolor{brickred}{RGB}{200,0,0}
+\usepackage[hyperindex]{hyperref}
+\hypersetup{colorlinks=true, linkcolor=darkblue, citecolor=brickred}
+
 
 
 %----------------------------------------------------------------------------------------
@@ -40,12 +44,21 @@
 \theoremstyle{plain}
 \newcounter{dummy} 
 \numberwithin{dummy}{section}
-\newtheorem{theorem}[dummy]{\thetheoremname}
-\newtheorem{definition}[dummy]{\thedefinitionname}
-\newtheorem{property}[dummy]{\thepropertyname}
-\newtheorem{lemma}[dummy]{\thelemmaname}
-\newtheorem{proposition}[dummy]{\thepropositionname}
-\newtheorem{corollary}[dummy]{\thecorollaryname}
-\newtheorem{example}[dummy]{\theexamplename}
-\newtheorem{remark}[dummy]{\theremarkname}
-% Các lệnh thetheoremname, ... đã được định dạng sẵn.
+\newtheorem{theorem}[dummy]{Định lý}
+\newtheorem{definition}[dummy]{Định nghĩa}
+\newtheorem{property}[dummy]{Tính chất}
+\newtheorem{lemma}[dummy]{Bổ đề}
+\newtheorem{proposition}[dummy]{Mệnh đề}
+\newtheorem{corollary}[dummy]{Hệ quả}
+\newtheorem{example}[dummy]{Ví dụ}
+\newtheorem{remark}[dummy]{Nhận xét}
+\addto\captionsvietnamese{\renewcommand\proofname{\bf Chứng minh}}
+\renewcommand\qedsymbol{$\blacksquare$} % Hình vuông màu đen cuối chứng minh.
+
+
+%----------------------------------------------------------------------------------------
+%	THIẾT LẬP CÁCH ĐÁNH SỐ, KIỂU ĐÁNH SỐ MỤC VÀ CHƯƠNG
+%----------------------------------------------------------------------------------------
+\titleformat{\section}
+{\normalfont\Large \sffamily\bfseries}{\arabic{section}.}{0.5em}{}
+
