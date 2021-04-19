@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.4.2)  19 APR 2021 23:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2021.4.2)  20 APR 2021 00:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -744,6 +744,19 @@ Package: lipsum 2019/01/02 v2.2 150 paragraphs of Lorem Ipsum dummy text
 (/usr/local/texlive/2020/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex
 File: lipsum.ltd.tex 2019/01/02 v2.2 The Lorem ipsum dummy text
 ))
+(/usr/local/texlive/2020/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip61
+\f@nch@O@elh=\skip62
+\f@nch@O@erh=\skip63
+\f@nch@O@olh=\skip64
+\f@nch@O@orh=\skip65
+\f@nch@O@elf=\skip66
+\f@nch@O@erf=\skip67
+\f@nch@O@olf=\skip68
+\f@nch@O@orf=\skip69
+)
 (/usr/local/texlive/2020/texmf-dist/tex/latex/pgfplots/pgfplots.sty
 (/usr/local/texlive/2020/texmf-dist/tex/generic/pgfplots/pgfplots.revision.tex)
 Package: pgfplots 2020/02/29 v1.17 Data Visualization (1.17)
@@ -978,9 +991,9 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip61
+\Hy@SectionHShift=\skip70
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 27.
+Package hyperref Info: Option `colorlinks' set `true' on input line 29.
 \c@dummy=\count306
 )
 
@@ -1022,15 +1035,15 @@ LaTeX Font Info:    ... okay on input line 23.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(85.35826pt, 441.01773pt, 71.13188pt)
-* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* h-part:(L,W,R)=(79.66771pt, 438.17245pt, 79.66771pt)
+* v-part:(T,H,B)=(79.66771pt, 685.71143pt, 79.66771pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=441.01773pt
-* \textheight=631.03232pt
-* \oddsidemargin=13.08827pt
-* \evensidemargin=13.08827pt
-* \topmargin=13.08827pt
+* \textwidth=438.17245pt
+* \textheight=642.41342pt
+* \oddsidemargin=7.39772pt
+* \evensidemargin=7.39772pt
+* \topmargin=7.39772pt
 * \headheight=12.0pt
 * \headsep=17.07164pt
 * \topskip=12.0pt
@@ -1134,6 +1147,13 @@ logo.png> <./logo/logokhoa.png>] (./main.toc)
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+Make it at least 14.49998pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -1188,7 +1208,7 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\acircumflex' on input line 81.
 
 
-Overfull \hbox (19.36923pt too wide) detected at line 92
+Overfull \hbox (22.21451pt too wide) detected at line 92
 [][] \OML/cmm/m/it/12 f\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr/m/n/12 )\OML
 /cmm/m/it/12 dx \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 + \OML/c
 mm/m/it/12 a[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 + \OML/cm
@@ -1200,6 +1220,9 @@ it/12 a[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 + \OML/cmm/m/i
 t/12 a[] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 a[] \OT1/cmr/m/n/12 + []\OML/cmm/m/
 it/12 :|
  []
+
+
+LaTeX Warning: Citation `Reference1' on page 2 undefined on input line 94.
 
 [2
 
@@ -1226,9 +1249,8 @@ Package hyperref Warning: Glyph not defined in PD1 encoding,
 Package hyperref Warning: Glyph not defined in PD1 encoding,
 (hyperref)                removing `\h' on input line 102.
 
-(./main.bbl [3
-
-]) [4
+No file main.bbl.
+[3
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 106.
@@ -1238,16 +1260,20 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 106.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 106.
 Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: 6D01FD6B3278C88C1ACE3076F9A55832;211.
+
+
+LaTeX Warning: There were undefined references.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 106.
  ) 
 Here is how much of TeX's memory you used:
- 30485 strings out of 480608
- 720230 string characters out of 5903631
- 1157883 words of memory out of 5000000
- 45788 multiletter control sequences out of 15000+600000
+ 30597 strings out of 480608
+ 721503 string characters out of 5903631
+ 1159909 words of memory out of 5000000
+ 45901 multiletter control sequences out of 15000+600000
  550430 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 72i,8n,121p,819b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,11n,121p,819b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 ></usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
 </usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></
@@ -1258,12 +1284,11 @@ usr/local/texlive/2020/texmf-dist/fonts/type1/vntex/vnr/vnbx12.pfb></usr/local/
 texlive/2020/texmf-dist/fonts/type1/vntex/vnr/vncsc10.pfb></usr/local/texlive/2
 020/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb></usr/local/texlive/2020/texmf-d
 ist/fonts/type1/vntex/vnr/vnsl12.pfb></usr/local/texlive/2020/texmf-dist/fonts/
-type1/vntex/vnr/vnssbx10.pfb></usr/local/texlive/2020/texmf-dist/fonts/type1/vn
-tex/vnr/vnti12.pfb>
-Output written on main.pdf (5 pages, 221721 bytes).
+type1/vntex/vnr/vnssbx10.pfb>
+Output written on main.pdf (4 pages, 212086 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 88 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
+ 100 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
+ 9 named destinations out of 1000 (max. 500000)
  55 words of extra memory for PDF output out of 10000 (max. 10000000)
 
