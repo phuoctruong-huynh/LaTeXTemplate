@@ -1,7 +1,7 @@
 \babel@toc {vietnamese}{}
-\contentsline {chapter}{Lời cam đoan}{iii}{section*.1}%
-\contentsline {chapter}{T\'om t\'\abreve t n\d \ocircumflex i dung}{vii}{section*.2}%
-\contentsline {chapter}{Lời cảm ơn}{ix}{section*.3}%
+\contentsline {chapter}{Lời cam đoan}{i}{section*.1}%
+\contentsline {chapter}{T\'om t\'\abreve t n\d \ocircumflex i dung}{iii}{section*.2}%
+\contentsline {chapter}{Lời cảm ơn}{iv}{section*.3}%
 \contentsline {chapter}{\numberline {1}Giới thiệu mẫu luận văn}{1}{chapter.10}%
 \contentsline {section}{\numberline {1.1}Thiết lập chung}{1}{section.11}%
 \contentsline {section}{\numberline {1.2}Môi trường định nghĩa, định lý, bổ đề, ...}{2}{section.12}%
@@ -11,4 +11,4 @@
 \contentsline {section}{\numberline {1.4}Cảnh báo về canh lề}{4}{section.24}%
 \contentsline {section}{\numberline {1.5}Trích dẫn}{4}{section.25}%
 \contentsline {chapter}{\numberline {2}Quy định trình bày luận văn}{5}{chapter.26}%
-\contentsline {chapter}{\numberline {A}Phụ lục}{7}{appendix.27}%
+\contentsline {chapter}{\numberline {A}Phụ lục}{6}{appendix.27}%
